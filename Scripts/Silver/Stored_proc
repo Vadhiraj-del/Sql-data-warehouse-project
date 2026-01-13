@@ -5,6 +5,11 @@ Script Purpose:
 	Actions Performed:
 		- Truncates Silver tables.
 		- Inserts transformed and cleansed data from Bronze into Silver tables.
+	it includes checks for 
+	Nulls, duplicates
+	Unwanted spaces in string fields
+	Invalid date range and orders.
+	Data Consistency bw related field.
 
 Usage Example:
     EXEC Silver.load_silver; 
